@@ -2,13 +2,18 @@
     background-color: $color-container;
     color: white;
     padding: 5px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .container_title {
     text-align: center;
-}
+    padding: 10px;
+    margin: 20px;
+    text-decoration: underline;
+    text-decoration-color: $color-purple;
+    }
 
 .container_form {
     text-align: center;
@@ -37,4 +42,51 @@
     height: 50px;
     width: 50px;
     border-radius: 50%;
+}
+
+.container_list {
+    list-style-type: none;
+}
+
+@media (min-width: 990px) {
+    .main-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+    }
+
+    .container-info {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .container-experience {
+        grid-column: 2;
+        grid-row: 1;        
+    }
+
+    .container-diplome {
+        grid-column: 2;
+        grid-row: 2;   
+    }
+
+    .container_skills {
+        grid-column: 3;
+        grid-row: 2; 
+    }
+
+    .container-interet {
+        grid-column: 3;
+        grid-row: 1;
+    }
+
+    .container-nouv {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .container-contact {
+        grid-column: 1 / 4;
+        grid-row: 3;
+    }
 }
