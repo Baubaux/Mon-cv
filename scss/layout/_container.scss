@@ -1,0 +1,40 @@
+.container {
+    background-color: $color-container;
+    color: white;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.container_title {
+    text-align: center;
+}
+
+.container_form {
+    text-align: center;
+}
+
+.form {
+    margin: 5px;
+    padding: 5px;
+    background-color: $color-background;
+    color: white;
+    border: none;
+}
+
+.form_submit {
+    margin: 5px;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.cube {
+    background-color: $color-purple;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
