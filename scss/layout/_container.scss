@@ -7,6 +7,10 @@
     margin-bottom: 30px;
 }
 
+.container-paragraph {
+    margin: 20px;
+}
+
 .container_title {
     text-align: center;
     padding: 10px;
@@ -48,11 +52,92 @@
     list-style-type: none;
 }
 
+.hr-container {
+    position: relative;
+    right: 150px;
+}
+
+.interet {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.interet-h3 {
+    text-align: center;
+}
+
+.icon {
+    max-width: 100px;
+
+}
+
+.container-diplome {
+    position: relative;
+}
+
+
 @media (min-width: 990px) {
     .main-container {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-auto-rows: minmax(100px, auto);
+        grid-template-columns: repeat(2, 500px);
+        grid-auto-rows: repeat(3, 500px);
+        justify-content: space-around;
+        align-content: space-between;
+    }
+
+    .container-info {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .container-experience {
+        grid-column: 2;
+        grid-row: 1;        
+    }
+
+    .container-diplome {
+        grid-column: 2;
+        grid-row: 2;   
+    }
+
+    .container_skills {
+        grid-column: 1;
+        grid-row: 3; 
+    }
+
+    .container-interet {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .container-nouv {
+        grid-column: 2;
+        grid-row: 3;
+    }
+
+    .container-contact {
+        grid-column: 1 / 4;
+        grid-row: 4;
+        height: 400px;
+    }
+
+    .interet {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 50px;
+
+    }
+}
+
+@media (min-width: 1510px) {
+    .main-container {
+        display: grid;
+        grid-template-columns: repeat(3, 500px);
+        grid-auto-rows: repeat(3, 500px);
+        justify-content: space-around;
+        align-content: space-between;
     }
 
     .container-info {
@@ -88,5 +173,14 @@
     .container-contact {
         grid-column: 1 / 4;
         grid-row: 3;
+        height: 400px;
+    }
+
+    .interet {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 50px;
+
     }
 }
