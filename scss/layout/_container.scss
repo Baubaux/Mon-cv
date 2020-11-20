@@ -76,11 +76,10 @@
     position: relative;
 }
 
-
 @media (min-width: 990px) {
     .main-container {
         display: grid;
-        grid-template-columns: repeat(2, 500px);
+        grid-template-columns: 1fr 1fr 1fr;
         grid-auto-rows: repeat(3, 500px);
         justify-content: space-around;
         align-content: space-between;
@@ -127,7 +126,10 @@
         flex-wrap: wrap;
         justify-content: space-around;
         margin: 50px;
+    }
 
+    .separator {
+        position: relative;
     }
 }
 

@@ -10,40 +10,43 @@
 <body>
 
   <header>
-    <nav class="navbar navbar-dark light-blue lighten-4">
-      <a class="navbar-brand" href="#"></a>
-      <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
-        aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><span class="dark-blue-text"><i
-            class="fas fa-bars fa-1x"></i></span></button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent1">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Informations personnelles</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Expériences professionnelles</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Centres d'intérets</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Formation</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Nouveautés</a>
-          </li>
-        </ul>
+    <div class="fixed-top">
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#Haut">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Informations">Informations personnelles</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Expériences">Expériences professionnelles</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Diplomes">Diplômes et ormation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Compétences">Compétences</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Intérets">Centres d'intérets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Nouveautés">Nouveautés</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Contact">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </nav>
+      <nav class="navbar navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </nav>
+    </div>
 
     <div class="header_images">
       <!-- <img class="header_background" src="img/Développeur web.png" alt="Image de fond navbar"> -->
@@ -51,17 +54,19 @@
     </div>
   </header>
   
-  <div class="main-container">
+  <div class="main-container" id="Haut">
 
     <div class="container container-info">
-      <h2 class="container_title">Informations personnelles</h2>
+      <h2 class="container_title" href="#Informations">Informations personnelles</h2>
       <p class="container-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. At consequatur neque quod eveniet corporis cupiditate odit modi vel ratione rem minima reiciendis placeat sint natus, perferendis corrupti rerum ea cum?
       Officia saepe cupiditate quam consectetur cumque sunt perferendis, id possimus. Doloremque suscipit fuga ad, explicabo repellat temporibus facere tenetur id aliquam magni, accusamus aliquid illo, quaerat laborum exercitationem voluptatem voluptatibus?
       Eum ipsam commodi accusamus laudantium iste veritatis quasi laboriosam magnam delectus, libero consequatur quaerat corporis neque beatae obcaecati cumque maiores facere! Inventore, aliquid impedit temporibus vel in consequatur quaerat? Veritatis!</p>
     </div>
 
+    <hr class="separator" width="50%" size="6" color="#6C32A6">
+
     <div class="container container-experience">
-      <h2 class="container_title">Expériences professionnelles</h2>
+      <h2 class="container_title" id="Expériences">Expériences professionnelles</h2>
       <ul class="container_list">
         <li>Stage PopSchool</li>
         <hr class="hr-container" width="20%" size="1" color="#6C32A6">
@@ -91,10 +96,10 @@
       </ul>
     </div>
 
-    <hr width="50%" size="6" color="#6C32A6">
+    <hr class="separator" width="50%" size="6" color="#6C32A6">
 
     <div class="container container-diplome">
-      <h2 class="container_title">Diplômes et formations</h2>
+      <h2 class="container_title" id="Diplomes">Diplômes et formations</h2>
       <ul class="container_list">
         <li>Formation Développeur web et web mobile (RNCP31114)</li>
           <ul class="container_list">
@@ -122,10 +127,10 @@
       </ul>
     </div>
 
-    <hr width="50%" size="6" color="#6C32A6">
+    <hr class="separator" width="50%" size="6" color="#6C32A6">
 
     <div class="container container_skills">
-      <h2 class="container_title">Compétences</h2>
+      <h2 class="container_title" id="Compétences">Compétences</h2>
       <div class="skills">
         <div class="skill_under">
           <div>
@@ -150,10 +155,10 @@
       </div>
     </div>
 
-    <hr width="50%" size="6" color="#6C32A6">
+    <hr class="separator" width="50%" size="6" color="#6C32A6">
 
     <div class="container container-interet">
-      <h2 class="container_title">Centres d'intérets</h2>
+      <h2 class="container_title" id="Intérets">Centres d'intérets</h2>
       <div class="interet">
         <div>
           <h3 class="interet-h3">Voyages</h3>
@@ -178,18 +183,18 @@
       </div>
     </div>
 
-    <hr width="50%" size="6" color="#6C32A6">
+    <hr class="separator" width="50%" size="6" color="#6C32A6">
 
     <div class="container container-nouv">
-      <h2 class="container_title">Nouveautés</h2>
+      <h2 class="container_title" id="Nouveautés">Nouveautés</h2>
       <p class="container-paragraph">20 Novembre 2020</p>
       <p class="container-paragraph">Réalisation de ce CV / Portfolio lors de la formation Développeur web</p>
     </div>
 
-    <hr width="50%" size="6" color="#6C32A6">
+    <hr class="separator" width="50%" size="6" color="#6C32A6">
 
     <div class="container container-contact">
-      <h2 class="container_title">Contact</h2>
+      <h2 class="container_title" id="Contact">Contact</h2>
       <div class="container_form">
       <input class="form" name="Name/surname" type="text" placeholder="Nom / Prénom :">
       <input class="form" name="Email" type="text" placeholder="Email :">
