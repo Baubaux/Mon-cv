@@ -69,7 +69,7 @@
 
 .icon {
     max-width: 100px;
-
+    height: 80px;
 }
 
 .container-diplome {
@@ -79,7 +79,7 @@
 @media (min-width: 990px) {
     .main-container {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(3, 1fr);
         grid-auto-rows: repeat(3, 500px);
         justify-content: space-around;
         align-content: space-between;
@@ -130,6 +130,10 @@
 
     .separator {
         position: relative;
+    }
+
+    .icon {
+        max-width: 100px;
     }
 }
 
@@ -183,6 +187,9 @@
         flex-wrap: wrap;
         justify-content: space-around;
         margin: 50px;
+    }
 
+    .icon {
+        max-width: 100px;
     }
 }
