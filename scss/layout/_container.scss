@@ -17,10 +17,10 @@
     margin: 20px;
     text-decoration: underline;
     text-decoration-color: $color-purple;
-    }
+}
 
-.container_form {
-    text-align: center;
+.container-contact {
+    
 }
 
 .form {
@@ -39,13 +39,6 @@
     display: flex;
     justify-content: space-around;
     margin: 20px;
-}
-
-.cube {
-    background-color: $color-purple;
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
 }
 
 .container_list {
@@ -79,46 +72,42 @@
 @media (min-width: 990px) {
     .main-container {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-auto-rows: repeat(3, 500px);
-        justify-content: space-around;
-        align-content: space-between;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+        column-gap: 10px;
+        grid-template-areas: 
+        "info exp"
+        "form skil"
+        "int nouv"
+        "cont cont"
     }
 
     .container-info {
-        grid-column: 1;
-        grid-row: 1;
+        grid-area: info;
     }
 
     .container-experience {
-        grid-column: 2;
-        grid-row: 1;        
+        grid-area: exp;     
     }
 
     .container-diplome {
-        grid-column: 2;
-        grid-row: 2;   
+        grid-area: form;
     }
 
     .container_skills {
-        grid-column: 1;
-        grid-row: 3; 
+        grid-area: skil;
     }
 
     .container-interet {
-        grid-column: 2;
-        grid-row: 2;
+        grid-area: int;
     }
 
     .container-nouv {
-        grid-column: 2;
-        grid-row: 3;
+        grid-area: nouv;
     }
 
     .container-contact {
-        grid-column: 1 / 4;
-        grid-row: 4;
-        height: 400px;
+        grid-area: cont;
     }
 
     .interet {
@@ -128,16 +117,72 @@
         margin: 50px;
     }
 
-    .separator {
-        position: relative;
-    }
+    // .separator {
+    //     position: relative;
+    // }
 
     .icon {
         max-width: 100px;
     }
 }
 
-@media (min-width: 1510px) {
+@media (min-width: 1200px) {
+    .main-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        column-gap: 10px;
+        grid-template-areas: 
+        "info exp form"
+        "skil int nouv"
+        "cont cont cont"
+    }
+
+    .container-info {
+        grid-area: info;
+    }
+
+    .container-experience {
+        grid-area: exp;     
+    }
+
+    .container-diplome {
+        grid-area: form;
+    }
+
+    .container_skills {
+        grid-area: skil;
+    }
+
+    .container-interet {
+        grid-area: int;
+    }
+
+    .container-nouv {
+        grid-area: nouv;
+    }
+
+    .container-contact {
+        grid-area: cont;
+    }
+
+    .interet {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 50px;
+    }
+
+    // .separator {
+    //     position: relative;
+    // }
+
+    .icon {
+        max-width: 100px;
+    }
+}
+
+@media (min-width: 1500px) {
     .main-container {
         display: grid;
         grid-template-columns: repeat(3, 500px);
