@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Baux Aurélien Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Electrolize&family=Teko:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
 </head>
 
 <body>
@@ -53,6 +55,8 @@
       <img class="header_logo" src="img/Logo-blanc.png" alt="Logo Baux Aurélien">
     </div>
   </header>
+  
+  <h1>Baux Aurélien, Développeur web en formation</h1>
   
   <div class="main-container" id="Haut">
 
@@ -134,33 +138,33 @@
       <div class="skills">
         <div class="skill_under">
           <div>
-            <p>HTML</p>
+            <p class="icon-title">HTML</p>
             <img class="icon" src="img/001-html-5.png" alt="Logo html5">
           </div>
           <div>
-            <p>CSS</p>
+            <p class="icon-title">CSS</p>
             <img class="icon" src="img/002-css.png" alt="Logo css3">
           </div>
           <div>
-            <p>PYTHON</p>
+            <p class="icon-title">PYTHON</p>
             <img class="icon" src="img/001-python.png" alt="Logo Python">
           </div>
           <div>
-            <p>GIT / GITHUB</p>
-            <img class="icon" src="img/002-github.png" alt="Logo github">
+            <p class="icon-title">GIT / GITHUB</p>
+            <img class="icon" src="img/001-github.png" alt="Logo github">
           </div>
         </div>
         <div class="skill_under">
           <div>
-            <p>JAVASCRIPT</p>
+            <p class="icon-title">JAVASCRIPT</p>
             <img class="icon" src="img/003-javascript.png" alt="Logo javascript">
           </div>
           <div>
-            <p>PHP</p>
+            <p class="icon-title">PHP</p>
             <img class="icon" src="img/004-php.png" alt="Logo Php">
           </div>
           <div>
-            <p>WORDPRESS</p>
+            <p class="icon-title">WORDPRESS</p>
             <img class="icon" src="img/005-wordpress.png" alt="Logo wordpress">
           </div>
         </div>
@@ -172,25 +176,29 @@
     <div class="container container-interet">
       <h2 class="container_title" id="Intérets">Centres d'intérets</h2>
       <div class="interet">
-        <div>
-          <h3 class="interet-h3">Voyages</h3>
-          <img class="icon" src="img/004-travel.png" alt="Icone travel">
-        </div>
+        <div class="interet_under">
           <div>
-          <h3 class="interet-h3">Films</h3>
-        <img class="icon" src="img/012-clapperboard.png" alt="Icon movies">
+            <p>Voyages</p>
+            <img class="icon" src="img/004-travel.png" alt="Icone travel">
+          </div>
+            <div>
+            <p>Films</p>
+          <img class="icon" src="img/012-clapperboard.png" alt="Icon movies">
+          </div>
+          <div>
+            <p>Vélo</p>
+            <img class="icon" src="img/007-cycling.png" alt="Icon cycle">
+          </div>
         </div>
-        <div>
-          <h3 class="interet-h3">Vélo</h3>
-          <img class="icon" src="img/007-cycling.png" alt="Icon cycle">
-        </div>
-        <div>
-          <h3 class="interet-h3">Moto</h3>
-          <img class="icon" src="img/001-chopper.png" alt="Icon Motorcycle">
-        </div>
-        <div> 
-          <h3 class="interet-h3">Jeux vidéos</h3>
-          <img class="icon" src="img/009-controller.png" alt="Icon controller">
+        <div class="interet_under">
+          <div>
+            <p>Moto</p>
+            <img class="icon" src="img/001-chopper.png" alt="Icon Motorcycle">
+          </div>
+          <div> 
+            <p>Jeux vidéos</p>
+            <img class="icon" src="img/009-controller.png" alt="Icon controller">
+          </div>
         </div> 
       </div>
     </div>
@@ -208,10 +216,19 @@
     <div class="container container-contact">
       <h2 class="container_title" id="Contact">Contact</h2>
       <div class="container_form">
-      <input class="form" name="Name/surname" type="text" placeholder="Nom / Prénom :">
-      <input class="form" name="Email" type="text" placeholder="Email :">
-      <textarea class="form" name="Objet" id="" cols="50" rows="6" placeholder="Objet"></textarea>
-      <input class="form_submit" type="submit" value="Envoyer">
+        <input class="form" name="Name/surname" type="text" placeholder="Nom / Prénom :">
+        <input class="form" name="Email" type="text" placeholder="Email :">
+        <textarea class="form" name="Objet" id="" cols="50" rows="6" placeholder="Objet"></textarea>
+        <input class="form_submit" type="reset" name="Réinitialiser" value="Réinitialiser">
+        <input class="form_submit" type="submit" value="Envoyer">
+      </div>
+      <div class="input-fields">
+        <input type="text" class="input" placeholder="Nom / Prénom :">
+        <input type="text" class="input" placeholder="Adresse mail :">
+      </div>
+      <div class="message">
+        <textarea placeholder="Message"></textarea>
+        <div class="btn">Envoyer</div>
       </div>
     </div>
   </div>
