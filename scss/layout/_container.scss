@@ -20,6 +20,11 @@
     text-decoration-color: $color-purple;
 }
 
+.ul-title {
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
 .form {
     margin: 5px;
     padding: 2%;
@@ -47,6 +52,9 @@
 .hr-container {
     position: relative;
     right: 150px;
+    width: 20%;
+    size: 1;
+    color: $color-purple;
 }
 
 .interet {
