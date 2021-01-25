@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5R3F7CL1HS"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-5R3F7CL1HS');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Baux Aurélien - Portfolio de développeur web</title>
@@ -53,7 +62,6 @@
     </div>
 
     <div class="header_images">
-      <!-- <img class="header_background" src="img/Développeur web.png" alt="Image de fond navbar"> -->
       <img class="header_logo" src="img/Logo-blanc.png" alt="Logo Baux Aurélien">
     </div>
   </header>
@@ -64,7 +72,7 @@
 
     <div class="container container-info">
       <h2 class="container_title" >Informations personnelles</h2>
-      <p class="container-paragraph">Bonjour et bienvenue,<br>
+      <p class="container-paragraph">Bonjour et bienvenu,<br>
         <br> 
         Je me présente, je m'appelle Aurélien et je suis en formation de développeur web et web mobile.<br>
         <br>
@@ -73,8 +81,6 @@
         Au cours de cette formation, mon intérêt pour le développement web a de plus en plus motivé mon choix suivant : une formation de développeur web !
       </p>
     </div>
-
-    <!-- <hr class="separator" width="50%" size="6" color="#6C32A6"> -->
 
     <div class="container container-experience">
       <h2 class="container_title" id="Expériences">Expériences professionnelles</h2>
@@ -99,12 +105,10 @@
       </ul>
     </div>
 
-    <!-- <hr class="separator" width="50%" size="6" color="#6C32A6"> -->
-
     <div class="container container-diplome">
       <h2 class="container_title" id="Diplomes">Diplômes et formations</h2>
       <ul class="container_list">
-        <li class="ul-title">Formation Développeur web et web mobile (RNCP31114)</li>
+        <li class="ul-title">Formation Développeur web et web mobile</li>
         <li>PopSchool / Lens</li>
         <li>2020</li>
     <hr class="hr-container"> 
@@ -121,8 +125,6 @@
         <li>Diplôme obtenu en Juin 2015</li>
       </ul>
     </div>
-
-    <!-- <hr class="separator" width="50%" size="6" color="#6C32A6"> -->
 
     <div class="container container_skills">
       <h2 class="container_title" id="Compétences">Compétences</h2>
@@ -162,8 +164,6 @@
       </div>
     </div>
 
-    <!-- <hr class="separator" width="50%" size="6" color="#6C32A6"> -->
-
     <div class="container container-interet">
       <h2 class="container_title" id="Intérets">Centres d'intérets</h2>
       <div class="interet">
@@ -194,13 +194,11 @@
       </div>
     </div>
 
-    <!-- <hr class="separator" width="50%" size="6" color="#6C32A6"> -->
-
     <div class="container container-nouv">
       <h2 class="container_title" id="Nouveautés">Nouveautés</h2>
       <p class="container-paragraph">Janvier 2021</p>
       <ul>
-        <li>Recherche de stage</li>
+        <li>Recherche de stage pour la validation du titre professionnel</li>
       </ul>
       <p class="container-paragraph">Novembre 2020</p>
       <ul>
@@ -209,16 +207,16 @@
       </ul>
     </div>
 
-    <!-- <hr class="separator" width="50%" size="6" color="#6C32A6"> -->
-
     <div class="container container-contact">
       <h2 class="container_title" id="Contact">Contact</h2>
-      <div class="container_form">
-        <input class="form" name="Name/surname" type="text" placeholder="Nom / Prénom :">
-        <input class="form" name="Email" type="text" placeholder="Email :">
-        <textarea class="form" name="Objet" cols="50" rows="6" placeholder="Objet"></textarea>
-        <input class="form_submit" type="submit" value="Envoyer">
-      </div>
+      <form action="POST">
+        <div class="container_form">
+          <input class="form" name="Name/surname" type="text" placeholder="Nom / Prénom :">
+          <input class="form" name="Email" type="text" placeholder="Email :">
+          <textarea class="form" name="Objet" cols="50" rows="6" placeholder="Objet"></textarea>
+          <input class="form_submit" type="submit" value="Envoyer">
+        </div>
+      </form>
     </div>
   </div>
 
